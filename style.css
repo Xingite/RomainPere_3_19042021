@@ -1,0 +1,123 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0 0%;
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 767px;
+    font-family: "Roboto", sans-serif;
+    position: inherit;
+}
+
+header div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    width: 100%;
+    box-shadow: 0 5px 10px 0 #00000030
+}
+
+.logo {
+    width: auto;
+    height: 30px;
+}
+
+.placerestaurant {
+    display: flex;
+    border: 1px solid transparent;
+    background-color: #EAEAEA;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.placerestaurant__iconposition {
+    padding-right: 2%;
+}
+
+.placerestaurant__position {
+    color: black;
+    font-size: 16px;
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+}
+
+.home {
+    background-color: #F6F6F6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 20px;
+    height: auto;
+    justify-content: space-evenly;
+}
+
+.home__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    color: black;
+}
+
+.home__subtitle {
+    text-align: center;
+    font-size: 16px;
+}
+
+.menupage {
+    padding-left: 6%;
+    padding-top: 13%;
+    margin: 0px;
+}
+
+.home .home__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: 50px;
+    padding: 5.5% 5%;
+    box-sizing: border-box;
+    border-radius: 4rem;
+    border: transparent;
+    font-size: 1rem;
+    background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
+    color: white;
+    box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.3);
+    margin-top: 4%;
+    transition: transform 150ms;
+}
+
+.home__btn:hover {
+    transform: scale(0.98);
+    transition: transform 150ms, box-shadow 150ms;
+}
+
+.fonctionality {
+    position: relative;
+}
+
+.fonctionality__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 330px;
+}
+
+.cards {
+    display: flex;
+    border: 1px solid transparent;
+    background-color: #F2F2F2;
+    height: 74px;
+    width: 90%;
+    margin: 0% 4%;
+    border-radius: 1.3rem;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+}
