@@ -9,9 +9,12 @@ body {
     position: inherit;
 }
 
+<<<<<<< HEAD
 
 /*header*/
 
+=======
+>>>>>>> main
 header div {
     position: relative;
     display: flex;
@@ -22,7 +25,11 @@ header div {
     box-shadow: 0 5px 10px 0 #00000030
 }
 
+<<<<<<< HEAD
 .header__logo {
+=======
+.logo {
+>>>>>>> main
     width: auto;
     height: 30px;
 }
@@ -37,7 +44,11 @@ header div {
     align-items: center;
 }
 
+<<<<<<< HEAD
 .placerestaurant__icon {
+=======
+.placerestaurant__iconposition {
+>>>>>>> main
     padding-right: 2%;
 }
 
@@ -71,6 +82,15 @@ header div {
     font-size: 16px;
 }
 
+<<<<<<< HEAD
+=======
+.menupage {
+    padding-left: 6%;
+    padding-top: 13%;
+    margin: 0px;
+}
+
+>>>>>>> main
 .home .home__btn {
     display: flex;
     align-items: center;
@@ -94,12 +114,15 @@ header div {
     transition: transform 150ms, box-shadow 150ms;
 }
 
+<<<<<<< HEAD
 .menupage {
     padding-left: 6%;
     padding-top: 13%;
     margin: 0px;
 }
 
+=======
+>>>>>>> main
 .fonctionality {
     position: relative;
 }
@@ -123,6 +146,7 @@ header div {
     justify-content: space-evenly;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
     cursor: pointer;
+<<<<<<< HEAD
 }
 
 .cards--color {
@@ -268,4 +292,6 @@ a {
     justify-content: center;
     align-items: center;
     animation: heartbeat 1.5s ease-in-out infinite both;
+=======
+>>>>>>> main
 }
