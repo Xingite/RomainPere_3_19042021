@@ -269,3 +269,20 @@ a {
     align-items: center;
     animation: heartbeat 1.5s ease-in-out infinite both;
 }
+
+.coeur3 {
+    position: absolute;
+    right: 5%;
+    top: 80%;
+    display: none !important;
+    color: #9356DC;
+    background-color: white;
+}
+
+.coeur2:active+.coeur3 {
+    display: block !important;
+}
+
+.coeur3:active+.coeur2 {
+    display: none;
+}
