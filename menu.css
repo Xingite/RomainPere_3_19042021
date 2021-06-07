@@ -256,19 +256,19 @@ section {
     margin: 4px 0;
 }
 
-.logofooter {
+.footer__logo {
     font-size: 25px;
     width: 100%;
     margin: 0px 0px 8px 0px !important;
     font-family: "Shrikhand", sans-serif;
 }
 
-.footer__icon {
+.footer-icon {
     display: flex;
     align-items: center;
 }
 
-.footer__icon__font {
+.footer-icon__position {
     padding-right: 8px;
     margin: 0px;
 }
