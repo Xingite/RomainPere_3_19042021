@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" media="(min-width:768px) and (max-width:1024px)" href="tablettemenu.css">
+    <link rel="stylesheet" media="(min-width:1025px) and (max-width:2700px)" href="./menudekstop.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://kit.fontawesome.com/5422ec4325.js" crossorigin="anonymous"></script>
@@ -14,6 +15,18 @@
 </head>
 
 <body>
+    <!--LOADINGPAGE-->
+    <div class="loadercontainer">
+        <span class="lettre">O</span>
+        <span class="lettre">H</span>
+        <span class="lettre">M</span>
+        <span class="lettre">Y</span>
+        <span class="lettre">F</span>
+        <span class="lettre">O</span>
+        <span class="lettre">O</span>
+        <span class="lettre">D</span>
+    </div>
+    <!--LOADINGPAGE-->
     <!--HEADER-->
     <header class="header">
         <div class="header__icon"><a><i class="fas fa-arrow-left"></i></a></div>
@@ -32,8 +45,8 @@
         <h4 class="titlemenu">ENTREES
             <div class="underlinemenu"></div><br></h4>
         <article class="article__menu">
-            <div class="article__menu__food">
-                <div>
+            <div class="article__menu__food article__menu__food--delay0">
+                <div class="article__menu__title">
                     <p class="article__menu__food__mixture">Fricassée d'escargot</p>
                     <p>Au piment d'espelette</p>
                 </div>
@@ -44,8 +57,8 @@
                     <div class="menucheck__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></div>
                 </div>
             </div>
-            <div class="article__menu__food">
-                <div>
+            <div class="article__menu__food article__menu__food--delay1">
+                <div class="article__menu__title">
                     <p class="article__menu__food__mixture">Foie gras de canard mi-cuit</p>
                     <p>Et ses copeaux de truffes noires</p>
                 </div>
@@ -56,8 +69,8 @@
                     <div class="menucheck__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></div>
                 </div>
             </div>
-            <div class="article__menu__food">
-                <div>
+            <div class="article__menu__food article__menu__food--delay2">
+                <div class="article__menu__title">
                     <p class="article__menu__food__mixture">Oeuf au plat</p>
                     <p>Assaisonné à la truffe sur lit de ca...</p>
                 </div>
@@ -73,8 +86,9 @@
         <h4 class="titlemenu">PLATS
             <div class="underlinemenu"></div><br></h4>
         <article class="article__menu">
-            <div class="article__menu__food">
-                <div>
+            <div class="article__menu__food article__menu__food--delay0">
+                <!--ajouter delay 0 1 2 sur tous les menus-->
+                <div class="article__menu__title">
                     <p class="article__menu__food__mixture">Filet de boeuf aux herbes</p>
                     <p>Accompagnés de sa ribambelle de légu...</p>
                 </div>
@@ -85,8 +99,8 @@
                     <div class="menucheck__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></div>
                 </div>
             </div>
-            <div class="article__menu__food">
-                <div>
+            <div class="article__menu__food article__menu__food--delay1">
+                <div class="article__menu__title">
                     <p class="article__menu__food__mixture">Parmentier de queue de boeuf</p>
                     <p>A la truffe noire sur sa purée de panais</p>
                 </div>
@@ -97,8 +111,8 @@
                     <div class="menucheck__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></div>
                 </div>
             </div>
-            <div class="article__menu__food">
-                <div>
+            <div class="article__menu__food article__menu__food--delay2">
+                <div class="article__menu__title">
                     <p class="article__menu__food__mixture">Filet de turbot</p>
                     <p>Aux agrumes</p>
                 </div>
@@ -114,8 +128,8 @@
         <h4 class="titlemenu">DESSERTS
             <div class="underlinemenu"></div><br></h4>
         <article class="article__menu">
-            <div class="article__menu__food">
-                <div>
+            <div class="article__menu__food article__menu__food--delay0">
+                <div class="article__menu__title">
                     <p class="article__menu__food__mixture">Paris-Brest</p>
                     <p>Revisité</p>
                 </div>
@@ -126,8 +140,8 @@
                     <div class="menucheck__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></div>
                 </div>
             </div>
-            <div class="article__menu__food">
-                <div>
+            <div class="article__menu__food article__menu__food--delay1">
+                <div class="article__menu__title">
                     <p class="article__menu__food__mixture">Macaron au chocolat d'exception</p>
                     <p>Et glace à la vanille de Madagascar</p>
                 </div>
@@ -138,8 +152,8 @@
                     <div class="menucheck__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></div>
                 </div>
             </div>
-            <div class="article__menu__food">
-                <div>
+            <div class="article__menu__food article__menu__food--delay2">
+                <div class="article__menu__title">
                     <p class="article__menu__food__mixture">Mousse au chocolat</p>
                     <p>Au piment d'espelette et à la truffe noire</p>
                 </div>
@@ -159,16 +173,18 @@
     <!--FOOTER-->
     <footer>
         <div class="footer">
+            <!--footer__logo-->
             <div class="footer__logo">ohmyfood</div>
-
+            <!--footer-icon-->
             <div class="footer-icon">
+                <!--footer-icon__position-->
                 <p class="footer-icon__position"><i class="fas fa-utensils" aria-hidden="true"></i></p>
-                <a>Proposer un restaurant</a>
+                <a class="footer-icon__link">Proposer un restaurant</a>
             </div>
 
-            <div class="footer__icon">
-                <p class="footer__icon__font"><i class="fas fa-hands-helping" aria-hidden="true"></i></p>
-                <div><a>Devenir partenaire</a></div>
+            <div class="footer-icon">
+                <p class="footer-icon__font"><i class="fas fa-hands-helping" aria-hidden="true"></i></p>
+                <div><a class="footer-icon__link">Devenir partenaire</a></div>
             </div>
 
             <div><a>Mentions légales</a></div>
@@ -176,6 +192,7 @@
         </div>
     </footer>
     <!--FOOTER-->
+
 
 
 

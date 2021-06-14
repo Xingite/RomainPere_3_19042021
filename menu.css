@@ -81,16 +81,14 @@ section {
 }
 
 .article__menu__food {
-    position: relative;
+    /* position: relative; */
     background-color: white;
-    border: 1px solid transparent;
     width: 85%;
     height: 28%;
     display: flex;
     justify-content: space-between;
     border-radius: 1rem;
     align-items: center;
-    padding: 0% 3%;
     line-height: 14px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 15%);
     cursor: pointer;
@@ -100,9 +98,29 @@ section {
     animation-fill-mode: both;
 }
 
+@keyframes menuAppear {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.article__menu__title {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
 .article__menu__food__mixture {
     font-size: 18px;
     font-weight: bolder;
+}
+
+strong {
+    padding-right: 10px;
 }
 
 .article__menu__food:hover .article__menu__food__mixture {
@@ -143,33 +161,6 @@ section {
     overflow-y: hidden;
 }
 
-.menucheck {
-    visibility: hidden;
-    position: absolute;
-    width: 0%;
-    height: 100%;
-    right: 0%;
-    display: flex;
-    justify-content: center;
-    border-radius: 0rem 1rem 1rem 0rem;
-    background: #99E2D0;
-    transition: 400ms;
-}
-
-.menucheck__icon {
-    font-size: 1.3rem;
-    position: absolute;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    transition-duration: 400ms;
-    transform: rotate(360deg);
-    color: #FFFFFF;
-}
-
 .article__menu__food:hover .menucheck__icon {
     visibility: visible;
     display: flex;
@@ -179,12 +170,6 @@ section {
     height: 100%;
     transition-duration: 400ms;
     transform: rotate(360deg);
-}
-
-.menucheck__icon>i {
-    transition: rotate(360deg);
-    transition-duration: 1000ms;
-    font-size: 0rem;
 }
 
 .article__menu__food:hover .menucheck__icon>i {
@@ -208,12 +193,44 @@ section {
     padding-top: 3%;
 }
 
-.footer {
-    background-color: #353535;
-    padding: 25px 25px 35px;
+
+/*check*/
+
+.menucheck {
+    visibility: hidden;
+    /* position: absolute; */
+    width: 0%;
+    height: 100%;
+    right: 0%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    border-radius: 0rem 1rem 1rem 0rem;
+    background: #99E2D0;
+    transition: 400ms;
 }
+
+.menucheck__icon {
+    font-size: 1.3rem;
+    /* position: absolute; */
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition-duration: 400ms;
+    transform: rotate(360deg);
+    color: #FFFFFF;
+}
+
+.menucheck__icon>i {
+    transition: rotate(360deg);
+    transition-duration: 1000ms;
+    font-size: 0rem;
+}
+
+
+/*check*/
 
 .buttoncommande {
     display: flex;
@@ -252,9 +269,10 @@ section {
     color: white;
 }
 
-.footer>div {
+
+/* .footer>div {
     margin: 4px 0;
-}
+} */
 
 .footer__logo {
     font-size: 25px;
@@ -299,4 +317,53 @@ section {
 a {
     text-decoration: none;
     color: black;
+}
+
+
+/*loading page */
+
+.loadercontainer {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    animation: loader 0.6s;
+    animation-fill-mode: both;
+    background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
+    animation-delay: .35s;
+}
+
+@keyframes loader {
+    100% {
+        z-index: -10;
+        opacity: 0;
+    }
+}
+
+.lettre {
+    color: #484848;
+    font-size: 7.5vw;
+    letter-spacing: 15px;
+    margin-bottom: 145px;
+    animation: flash linear 0.7s infinite;
+}
+
+@keyframes flash {
+    0% {
+        color: white;
+        text-shadow: 0 0 7px #fff900;
+    }
+    90% {
+        color: #484848;
+        text-shadow: none;
+    }
+    100% {
+        color: black;
+        text-shadow: 0 0 7px #fff900;
+    }
 }

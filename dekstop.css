@@ -1,0 +1,229 @@
+    @media (min-width:1025px) and (max-width:1700px) {
+        body {
+            max-width: 1700px;
+        }
+        header>div {
+            height: 120px;
+        }
+        .logo {
+            height: 50%;
+        }
+        .localisation {
+            height: 100px;
+        }
+        .placerestaurant__icon {
+            font-size: 22px;
+        }
+        .placerestaurant__position {
+            font-size: 24px;
+        }
+        .home__title {
+            font-size: 24px;
+        }
+        .home__subtitle {
+            font-size: 20px;
+        }
+        .home .home__btn {
+            height: 15px;
+            padding: 3.5%;
+            width: 310px;
+            margin-top: 2%;
+            font-size: 19.3px;
+        }
+        .fonctionality__cards {
+            flex-direction: row;
+            align-items: center;
+            height: 500px;
+        }
+        .cards {
+            position: relative;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 15%);
+            transition: transform 1s;
+        }
+        .cards:hover {
+            transform: scale(1.05);
+        }
+        .cards__number {
+            position: absolute;
+            bottom: -3%;
+            left: 46%;
+            height: 30px;
+            width: 30px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            padding: 0.5%;
+        }
+        .cards__text {
+            font-size: 23px;
+            display: flex;
+            justify-content: center;
+        }
+        .cards__icone {
+            padding-top: 1rem;
+            font-size: 22px;
+        }
+        .fonctionality__tittle {
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        .menupage__tittle {
+            padding-top: 2%;
+            padding-bottom: 2%;
+            font-size: 30px;
+        }
+        .menupage--height {
+            padding-bottom: 0%;
+        }
+        .restaurant {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            height: 900px;
+        }
+        .restaurant-menu {
+            width: 42%;
+            height: 40%;
+            display: flex;
+            transition: transform 1s;
+        }
+        .restaurant-menu:hover {
+            transform: scale(1.05)
+        }
+        .restaurant-menu__description,
+        .restaurant-menu__heart {
+            font-size: 23px;
+        }
+        .footer {
+            align-items: center;
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+    /*ECRAN 4K*/
+    
+    @media (min-width:1701px) and (max-width:2700px) {
+        body {
+            max-width: 2700px;
+        }
+        header>div {
+            height: 120px;
+        }
+        .logo {
+            height: 50%;
+        }
+        .localisation {
+            height: 100px;
+        }
+        .placerestaurant__icon {
+            font-size: 26px;
+            padding-right: 1%;
+        }
+        .placerestaurant__position {
+            font-size: 30px;
+        }
+        .home__title {
+            font-size: 32px;
+        }
+        .home__subtitle {
+            font-size: 28px;
+        }
+        .home .home__btn {
+            height: 15px;
+            padding: 2.5%;
+            width: 420px;
+            margin-top: 1%;
+            font-size: 26.5px;
+        }
+        .fonctionality__cards {
+            flex-direction: row;
+            align-items: center;
+            height: 500px;
+        }
+        .cards {
+            position: relative;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 15%);
+            transition: transform 1s;
+        }
+        .cards:hover {
+            transform: scale(1.05);
+        }
+        .cards__number {
+            position: absolute;
+            bottom: -3%;
+            left: 46%;
+            height: 30px;
+            width: 30px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            padding: 0.5%;
+        }
+        .cards__text {
+            font-size: 28px;
+            display: flex;
+            justify-content: center;
+        }
+        .cards__icone {
+            padding-top: 1rem;
+            font-size: 22px;
+        }
+        .fonctionality__tittle {
+            padding-top: 2%;
+            padding-bottom: 2%;
+            font-size: 30px;
+        }
+        .menupage--height {
+            padding-bottom: 0%;
+        }
+        section {
+            padding-bottom: 2%;
+        }
+        .restaurant .restaurant-menu .new {
+            width: 130px;
+            height: 60px;
+            font-weight: 500;
+            font-size: 1.6rem;
+        }
+        .restaurant {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            height: 1500px;
+        }
+        .restaurant-menu {
+            width: 42%;
+            height: 44%;
+            display: flex;
+            transition: transform 1s;
+        }
+        .restaurant-menu:hover {
+            transform: scale(1.05)
+        }
+        .restaurant-menu__description,
+        .restaurant-menu__heart {
+            font-size: 38px;
+        }
+        .image {
+            height: 75%;
+        }
+        .footer {
+            align-items: center;
+            text-align: center;
+            font-size: 25px;
+        }
+    }

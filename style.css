@@ -94,7 +94,7 @@ header div {
     transition: transform 150ms, box-shadow 150ms;
 }
 
-.menupage__tittle {
+.fonctionality__tittle {
     padding-left: 6%;
     padding-top: 13%;
     margin: 0px;
@@ -155,6 +155,12 @@ header div {
     width: 75%;
     height: 100%;
     align-items: center;
+}
+
+.menupage__tittle {
+    padding-left: 6%;
+    padding-top: 13%;
+    margin: 0px;
 }
 
 .menupage-section {
@@ -219,9 +225,10 @@ a {
     color: white;
 }
 
-.footer>div {
+
+/* .footer>div {
     margin: 4px 0;
-}
+} */
 
 .footer__logo {
     font-size: 25px;
@@ -285,4 +292,53 @@ a {
 
 .coeur3:active+.coeur2 {
     display: none;
+}
+
+
+/* loading page*/
+
+.loadercontainer {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    animation: loader 0.6s;
+    animation-fill-mode: both;
+    background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
+    animation-delay: 1.75s;
+}
+
+@keyframes loader {
+    100% {
+        z-index: -10;
+        opacity: 0;
+    }
+}
+
+.lettre {
+    color: #484848;
+    font-size: 7.5vw;
+    letter-spacing: 15px;
+    margin-bottom: 145px;
+    animation: flash linear 0.7s infinite;
+}
+
+@keyframes flash {
+    0% {
+        color: white;
+        text-shadow: 0 0 7px #fff900;
+    }
+    90% {
+        color: #484848;
+        text-shadow: none;
+    }
+    100% {
+        color: black;
+        text-shadow: 0 0 7px #fff900;
+    }
 }

@@ -1,0 +1,72 @@
+@media (min-width:768px) and (max-width:1024px) {
+    body {
+        max-width: 1024px;
+    }
+    .home .home__btn {
+        width: 35vw;
+        font-size: 18px;
+    }
+    .menupage__tittle {
+        padding-top: 7%;
+    }
+    .fonctionality__cards {
+        /* position: initial; */
+        flex-direction: row;
+        align-items: center;
+        height: 500px;
+    }
+    .cards {
+        position: relative;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 15%);
+        transition: transform 1s;
+    }
+    .cards:hover {
+        transform: scale(1.05);
+    }
+    .cards__number {
+        position: absolute;
+        bottom: -4.3%;
+        left: 44%;
+        height: 30px;
+        width: 30px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        padding: 0.5%;
+    }
+    .cards__text {
+        font-size: 20px;
+        text-align: center;
+    }
+    .cards__icone {
+        padding-top: 1rem;
+        font-size: 20px;
+    }
+    .restaurant-menu__image {
+        height: 75%;
+    }
+    .restaurant {
+        height: 1600px;
+    }
+    .restaurant-menu {
+        height: 22%;
+        width: 80%;
+        transition: transform 1s;
+    }
+    .restaurant-menu:hover {
+        transform: scale(1.05)
+    }
+    .restaurant-menu__heart {
+        font-size: 22px;
+    }
+    .footer {
+        align-items: center;
+        text-align: center;
+        font-size: 18px;
+    }
+}

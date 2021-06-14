@@ -1,0 +1,61 @@
+@media (min-width:768px) and (max-width:1024px) {
+    body {
+        max-width: 1024px;
+    }
+    .header {
+        position: sticky;
+    }
+    .header__icon {
+        font-size: 22px;
+    }
+    section {
+        height: 1700px;
+    }
+    .section__menu__title {
+        font-size: 30px;
+    }
+    .section__menu__icon {
+        font-size: 27px;
+    }
+    .article__menu__food {
+        height: 28%;
+    }
+    .article__menu__food:hover .article__menu__food__mixture {
+        text-overflow: initial;
+        overflow: initial;
+        white-space: normal;
+        width: 100%;
+    }
+    .article__menu__food:hover .article__menu__title {
+        white-space: normal;
+        text-overflow: initial;
+        overflow: initial;
+        width: 100%;
+        font-size: 22px;
+    }
+    .titlemenu {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5% 0%;
+    }
+    .underlinemenu {
+        width: 120px;
+    }
+    .article__menu__food--height {
+        height: 22%;
+    }
+    .article__menu__food div>p {
+        font-size: 22px;
+    }
+    .buttoncommande {
+        width: 400px;
+        font-size: 18px;
+    }
+    .footer {
+        align-items: center;
+        text-align: center;
+        font-size: 18px;
+    }
+}
