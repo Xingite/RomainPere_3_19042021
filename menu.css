@@ -119,8 +119,13 @@ section {
     font-weight: bolder;
 }
 
-strong {
+.article__menu__price {
     padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    margin-right: 10px;
 }
 
 .article__menu__food:hover .article__menu__food__mixture {
