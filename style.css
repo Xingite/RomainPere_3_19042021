@@ -125,8 +125,13 @@ header div {
     cursor: pointer;
 }
 
-.cards--color {
+
+/* .cards--color {
     background-color: #f2eafb;
+} */
+
+.cards:hover {
+    background-color: rgba(156, 51, 251, 0.12);
 }
 
 .cards__icone--color {
@@ -277,7 +282,8 @@ a {
     animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
-.coeur3 {
+
+/* .coeur3 {
     position: absolute;
     right: 5%;
     top: 80%;
@@ -292,7 +298,34 @@ a {
 
 .coeur3:active+.coeur2 {
     display: none;
+} */
+
+
+/* .coeur3 {
+    opacity: 0;
+    transition-duration: 500ms;
+} */
+
+.coeur2 {
+    transition-duration: 500ms;
 }
+
+.restaurant-menu__heart:hover>.coeur2 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* .restaurant-menu__heart:hover>.coeur3 {
+    display: block;
+    opacity: 1;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.20);
+    transition-duration: 500ms;
+} */
 
 
 /* loading page*/
